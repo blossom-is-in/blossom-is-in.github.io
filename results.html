@@ -5,41 +5,53 @@
     <title>Demo Results</title>
     <style>
         body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; padding: 30px; color: #333; }
+        .account-header { text-align: center; margin-bottom: 30px; }
         table { width: 90%; margin: 20px auto; border-collapse: collapse; }
         th, td { padding: 12px; border: 1px solid #ddd; text-align: left; }
         th { background-color: #f2f2f2; font-weight: bold; }
-        a { color: #007bff; }
+        a { color: #007bff; text-decoration: none; }
+        a:hover { text-decoration: underline; }
     </style>
 </head>
 <body>
-    <h1>Results for Sandbox User: @sandbox_test_user</h1>
+
+    <div class="account-header">
+        <h1>Results for Sandbox User:</h1>
+        <h2><a href="https://www.tiktok.com/@tiktok" target="_blank">@sandbox_test_user</a></h2>
+    </div>
+
     <table>
         <thead>
             <tr>
                 <th>Video ID</th>
                 <th>Share Title</th>
                 <th>View Count</th>
-            </tr>
+                <th>Post Link</th> </tr>
         </thead>
         <tbody>
             <tr>
                 <td>7123456789012345678</td>
                 <td>This is a cool test video!</td>
                 <td>1,250,432</td>
+                <td><a href="https://www.tiktok.com/@tiktok/video/7318342418552392990" target="_blank">View Post</a></td>
             </tr>
             <tr>
                 <td>7123456789012345679</td>
                 <td>Another amazing sandbox video</td>
                 <td>876,123</td>
+                <td><a href="https://www.tiktok.com/@tiktok/video/7318342418552392990" target="_blank">View Post</a></td>
             </tr>
             <tr>
                 <td>7123456789012345680</td>
                 <td>Testing the API #fyp</td>
                 <td>2,109,850</td>
+                <td><a href="https://www.tiktok.com/@tiktok/video/7318342418552392990" target="_blank">View Post</a></td>
             </tr>
         </tbody>
     </table>
     <br><br>
-    <a href="index.html">Go Back to Homepage</a>
+    <div style="text-align: center;">
+        <a href="index.html">Go Back to Homepage</a>
+    </div>
 </body>
 </html>
